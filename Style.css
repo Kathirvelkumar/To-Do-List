@@ -94,9 +94,14 @@ li button:hover {
 
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 600px) {
+    body {
+        background-position: 670px;
+    }
+
     #container {
         padding: 20px 15px;
-        width: 95%;
+        width: 70%;
+        margin: 85px auto;
     }
 
     input {
@@ -106,4 +111,5 @@ li button:hover {
     li {
         font-size: 14px;
     }
+
 }
