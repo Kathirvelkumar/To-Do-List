@@ -1,0 +1,109 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('./image/ToDoList.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    /* width: 100%; */
+}
+
+#container {
+    margin: 100px 160px;
+    background-color: transparent;
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 550px;
+    max-width: 90%;
+    box-shadow: 0 10px 30px burlywood;
+}
+
+#container h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: burlywood;
+}
+
+button {
+    background-color: rgb(233, 177, 103);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(146, 90, 17);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+li {
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    word-break: break-word;
+}
+
+li:hover {
+    transform: scale(1.01);
+}
+
+li button {
+    background-color: rgb(39, 119, 39);
+    font-size: 13px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    /* Added margin to separate button from text */
+}
+
+li button:hover {
+    background-color: #27b627;
+    transition: 0.5s;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 600px) {
+    #container {
+        padding: 20px 15px;
+        width: 95%;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}
